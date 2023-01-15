@@ -8,7 +8,7 @@ Kelas: TI.CI.22
 Link Yotube Tutorial Program
 
 PDF Tutorial Program
-PDF Tutorial UAS-SEMESTER 1 Asep saepuloh.pdf
+[PDF Tutorial UAS-SEMESTER 1 Asep saepuloh.pdf]
 
 Project UAS
 ![gambar.png](ss/projeck.png)
