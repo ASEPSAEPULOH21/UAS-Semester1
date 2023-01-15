@@ -1,4 +1,5 @@
 # UAS-Semester1
+
 project UAS Semester 1
 
 
@@ -13,9 +14,8 @@ Link Yotube Tutorial Program
 
 
 PDF Tutorial Program
-[PDF Tutorial UAS-SEMESTER 1 Asep saepuloh.pdf]
 
-![klik atuh]
+[klik donngs.pdf](https://github.com/ASEPSAEPULOH21/UAS-Semester1/files/10419152/PDF.Tutorial.UAS-SEMESTER.1.Asep.saepuloh.pdf)
 
 
 Project UAS
