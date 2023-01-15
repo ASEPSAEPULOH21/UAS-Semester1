@@ -86,23 +86,36 @@ def masukan_data():
     tambah_data(nama,nim,tugas,uts,uas,akhir)
 
 def cari_hapus():
+
     hapus_data(input("Masukan Nama yang ingin di Hapus = "))
 
 def cari_ubah():
+
     ubah_data(input("Masukan Nama dari Data yang ingin di Ubah = "))
+    
     print("\n:=====================:")
+    
     print(":  Masukan Data Baru  :")
+    
     print(":=====================:")
 
     nama = input("\nMasukan Nama = ")
+    
     nim = int(input("Masukan NIM = "))
+    
     tugas = int(input("Masukan Nilai Tugas = "))
+    
     uts = int(input("Masukan Nilai UTS = "))
+    
     uas = int(input("Masukan Nilai UAS = "))
+    
     akhir = float((0.30 * tugas) + (0.35 * uts) + (0.35 * uas))
+    
     tambah_data(nama, nim, tugas, uts, uas, akhir)
 
-    view_nilai.py
+
+view_nilai.py
+
 Selanjutnya saya membuat fungsi untuk menampilkan semua data yang ada dan fungsi untuk 
 menampilkan hasil pencarian user dengan menggunakan modul tabulate data untuk 
 mempercantik tabel dan memanggil database(dictionary) yang ada pada modul daftar_nilai.py
@@ -113,17 +126,25 @@ from tabulate import tabulate
 
 
 def tampilkan():
+    
     print(tabulate(database.values(), headers=[
+          
           "Nama", "NIM", "Tugas", "UTS", "UAS", "AKHIR"], tablefmt="double_grid"))
 
 
 def cari(nama):
+    
     Data_cari = {}
+    
     for key, value in database.items():
+        
         if nama in value:
+            
             Data_cari[key] = value
 
+    
     print(tabulate(Data_cari.values(), headers=[
+          
           "Nama", "NIM", "Tugas", "UTS", "UAS", "AKHIR"], tablefmt="double_grid"))
 
 main.py
@@ -139,58 +160,87 @@ import model
 import view
 import os
 
-
-while True:
+    while True:
+    
     print('\n|================|')
+    
     print('|  Pilihan Menu  |')
+    
     print('|================|')
+    
     print('\n1. Tambah Data')
+    
     print('2. Hapus Data')
+    
     print('3. Ubah Data')
+    
     print('4. Cari Data')
+    
     print('5. Lihat Semua Data')
+    
     print('6. Keluar ')
 
     pilihan = input('\nMasukan Pilihan Menu = ')
 
     if pilihan == '1':
+        
         view.input_nilai.masukan_data()
+    
     elif pilihan == '2':
+        
         view.input_nilai.cari_hapus()
+    
     elif pilihan == '3':
+        
         view.input_nilai.cari_ubah()
+    
     elif pilihan == '4':
+        
         model.daftar_nilai.cari_data()
+    
     elif pilihan == '5':
+        
         view.view_nilai.tampilkan()
+    
     elif pilihan == '6':
+        
         break
+    
     else:
+        
         print('Masukan Pilihan yang Benar!!')
 
 
 Hasil Perogram
+
 Tambah Data
+
 Berikut dokumentasi untuk hasil program tambah data
 
 ![gambar.png](ss/1.png)
+
 Hapus Data
+
 Berikut dokumentasi untuk hasil program hapus data
+
 sebelum di hapus
 
 ![gambar.png](ss/2.png)
 
 Ubah Data
+
 Berikut dokumentasi untuk hasil program ubah data
 
 ![gambar.png](ss/3.png)
 
 Cari Data
+
 Berikut dokumentasi untuk hasil program cari data
 
 ![gambar.png](ss/4.png)
 
 Tampilkan Semua Data
+
 Berikut dokumentasi untuk hasil program tampilkan semua data
 
 ![gambar.png](ss/5.png)
