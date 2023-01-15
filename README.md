@@ -12,6 +12,8 @@ Kelas: TI.CI.22
 
 Link Yotube Tutorial Program
 
+https://youtu.be/UvGCxckMpKI
+
 
 PDF Tutorial Program
 
