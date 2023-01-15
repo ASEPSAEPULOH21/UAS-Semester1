@@ -1,27 +1,40 @@
 # UAS-Semester1
 project UAS Semester 1
 
+
 Nama : Asep Saepuloh
+
 NIM  : 312210037
+
 Kelas: TI.CI.22
+
 
 Link Yotube Tutorial Program
 
+
 PDF Tutorial Program
 [PDF Tutorial UAS-SEMESTER 1 Asep saepuloh.pdf]
+
 ![klik atuh]
 
 
 Project UAS
+
+
 ![gambar.png](ss/projeck.png)
+
 
 Penjeleasan Program
 Untuk membuat Program tersebut pertama buat package yang berisi file seperti dalam ketentuan di atas.
 
+
 daftar_nilai.py
-Pertama saya membuat file daftar_nilai.py yang terletak pada folder model dan berisi beberapa fungsi yaitu tambah_data, ubah_data, hapus_data, dan cari_data dan berisi database berupa dictionary
+Pertama saya membuat file daftar_nilai.py yang terletak pada folder model dan berisi beberapa fungsi 
+yaitu tambah_data, ubah_data, hapus_data, dan cari_data dan berisi database berupa dictionary
+
 
 Berikut Code Program daftar_nilai.py
+
 
 database = {}
 
@@ -44,16 +57,24 @@ def cari_data():
     from view.view_nilai import cari
     cari(input("\nMasukan Nama Yang Ingin dicari = "))
 
-    input_nilai.py
-Selanjutnya saya membuat fungsi untuk meminta user memsaukan data / input yang berada pada file input_nilai.py yang berada pada modul view dan input user di gabung dengan fungsi yang sudah saya buat sebelumnya pada daftar_nilai.py untuk memasukan inputan user ke database(dictionary)
+input_nilai.py
+
+Selanjutnya saya membuat fungsi untuk meminta user memsaukan data / input yang berada pada file
+input_nilai.py yang berada pada modul view dan input user di gabung dengan fungsi yang sudah 
+saya buat sebelumnya pada daftar_nilai.py untuk memasukan inputan user ke database(dictionary)
 Berikut Code Perogram yang berada pada input_nilai.py
+
 from model.daftar_nilai import tambah_data, ubah_data, hapus_data
 from view.view_nilai import cari
 
 
 def masukan_data():
+
+
     print("\n|=========================|")
+
     print("|  Tambah Data Mahasiswa  |")
+
     print("|=========================|")
 
     nama = input("\nMasukan Nama = ")
@@ -82,8 +103,11 @@ def cari_ubah():
     tambah_data(nama, nim, tugas, uts, uas, akhir)
 
     view_nilai.py
-Selanjutnya saya membuat fungsi untuk menampilkan semua data yang ada dan fungsi untuk menampilkan hasil pencarian user dengan menggunakan modul tabulate data untuk mempercantik tabel dan memanggil database(dictionary) yang ada pada modul daftar_nilai.py
+Selanjutnya saya membuat fungsi untuk menampilkan semua data yang ada dan fungsi untuk 
+menampilkan hasil pencarian user dengan menggunakan modul tabulate data untuk 
+mempercantik tabel dan memanggil database(dictionary) yang ada pada modul daftar_nilai.py
 Berikut code program view_nilai.py
+
 from model.daftar_nilai import database
 from tabulate import tabulate
 
@@ -103,8 +127,14 @@ def cari(nama):
           "Nama", "NIM", "Tugas", "UTS", "UAS", "AKHIR"], tablefmt="double_grid"))
 
 main.py
-Terakhir saya membuat file main.py yang berisi code program untuk menyatukan semua fungsi yang ada di beberapa modul yang telah saya buat sebelumnya dengan mengimport modul dan fungsi yang akan saya pakai ke dalam main.py dan saya membuat perulanagn menggunakan py while True:  untuk mebuat perulangan pada pilihan menu yang akan tampil sebagai pilihan user.
+
+Terakhir saya membuat file main.py yang berisi code program untuk menyatukan semua fungsi 
+yang ada di beberapa modul yang telah saya buat sebelumnya dengan mengimport modul dan 
+fungsi yang akan saya pakai ke dalam main.py dan saya membuat perulanagn menggunakan py 
+while True:  untuk mebuat perulangan pada pilihan menu yang akan tampil sebagai pilihan user.
+
 Berikut Code program main.py
+
 import model
 import view
 import os
@@ -142,17 +172,25 @@ while True:
 Hasil Perogram
 Tambah Data
 Berikut dokumentasi untuk hasil program tambah data
+
 ![gambar.png](ss/1.png)
 Hapus Data
 Berikut dokumentasi untuk hasil program hapus data
 sebelum di hapus
+
 ![gambar.png](ss/2.png)
+
 Ubah Data
 Berikut dokumentasi untuk hasil program ubah data
+
 ![gambar.png](ss/3.png)
+
 Cari Data
 Berikut dokumentasi untuk hasil program cari data
+
 ![gambar.png](ss/4.png)
+
 Tampilkan Semua Data
 Berikut dokumentasi untuk hasil program tampilkan semua data
+
 ![gambar.png](ss/5.png)
