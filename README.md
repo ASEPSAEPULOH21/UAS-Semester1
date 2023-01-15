@@ -223,7 +223,6 @@ Hapus Data
 
 Berikut dokumentasi untuk hasil program hapus data
 
-sebelum di hapus
 
 ![gambar.png](ss/2.png)
 
